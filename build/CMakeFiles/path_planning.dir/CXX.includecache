@@ -772,6 +772,24 @@ lapacke_mangling.h
 
 /Users/BB953334/sdc/projects/sdc_p11_path_planning/src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/cost.cpp
+cost.h
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/cost.h
+functional
+-
+iterator
+-
+map
+-
+math.h
+-
+iostream
+-
+
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/cost.h
+vector
+-
+
 /Users/BB953334/sdc/projects/sdc_p11_path_planning/src/json.hpp
 algorithm
 -
@@ -849,6 +867,8 @@ Eigen-3.3/Eigen/QR
 /Users/BB953334/sdc/projects/sdc_p11_path_planning/src/Eigen-3.3/Eigen/QR
 json.hpp
 /Users/BB953334/sdc/projects/sdc_p11_path_planning/src/json.hpp
+vehicle.h
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/vehicle.h
 spline.h
 /Users/BB953334/sdc/projects/sdc_p11_path_planning/src/spline.h
 
@@ -860,6 +880,36 @@ cassert
 vector
 -
 algorithm
+-
+
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/vehicle.cpp
+vehicle.h
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/vehicle.h
+math.h
+-
+cmath
+-
+map
+-
+string
+-
+iterator
+-
+cost.h
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/cost.h
+spline.h
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/spline.h
+iostream
+-
+
+/Users/BB953334/sdc/projects/sdc_p11_path_planning/src/vehicle.h
+random
+-
+vector
+-
+map
+-
+string
 -
 
 /usr/local/include/pthread-barrier.h
