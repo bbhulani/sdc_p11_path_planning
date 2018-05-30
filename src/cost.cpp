@@ -26,6 +26,7 @@ double lane_speed(vector<vector<double>> sensor_fusion, int intended_lane)
 { 
   double lane_speed;
   int k; 
+  int cars_in_lane = 0;
   for(k = 0; k < sensor_fusion.size(); k++)
   {
     float d1 = sensor_fusion[k][6];
@@ -35,9 +36,10 @@ double lane_speed(vector<vector<double>> sensor_fusion, int intended_lane)
     if (d1 < (2+4*intended_lane+2) && d1 > (2+4*intended_lane-2))
     {
       lane_speed += check_speed1;
+      cars_in_lane++;
     }
   }
-  lane_speed = lane_speed/k;
+  lane_speed = lane_speed/cars_in_lane;
   return lane_speed;
 }
 
@@ -86,7 +88,7 @@ double buffer_cost(vector<vector<double>> sensor_fusion, double car_s, int inten
     // Penalizes getting close to other vehicles.
     double nearest = distance_to_nearest_vehicle(sensor_fusion, car_s, intended_lane, prev_size);
     if(nearest)
-      return 1 - 2*exp(-(2*VEHICLE_RADIUS/nearest));
+      return 1 - 2*exp(-(3*VEHICLE_RADIUS/nearest));
     else
       return 0;
 }

@@ -63,9 +63,10 @@ void vehicle::choose_next_state(int &lane, double &ref_vel, bool too_close, vect
     vector<double> costs;
     int new_lane = lane;
 
-    //if(too_close && (ref_vel > lane_speed(sensor_fusion, lane))) {
     if(too_close) {
-      ref_vel -= 0.224;
+      if(ref_vel > lane_speed(sensor_fusion, lane)) {
+        ref_vel -= 2*0.224;
+      }
     } else if(ref_vel < 49.5) {
       ref_vel += 0.224;
     }
