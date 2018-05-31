@@ -2,8 +2,9 @@
 #include <functional>
 #include <iterator>
 #include <map>
-#include <math.h>
+#include <cmath>
 #include <iostream>
+#include <algorithm>
 
 const double COLLISION_COST = 1000;
 const double BUFFER_COST = 100;

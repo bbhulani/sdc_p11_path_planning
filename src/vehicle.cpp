@@ -7,6 +7,7 @@
 #include "cost.h"
 #include "spline.h"
 #include <iostream>
+#include <algorithm>
 
 /**
  * Initializes vehicle
